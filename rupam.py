@@ -413,7 +413,7 @@ def handle_bgmi(message):
                 start_attack_reply(message, target, port, time)
 
                 # Construct and run the attack command
-                full_command = f"./attack3 {target} {port} {time} 1200"
+                full_command = f"./attack3 {target} {port} {time} 1000"
                 try:
                     subprocess.run(full_command, shell=True, check=True)
                     response = (f"💣 𝗔𝗧𝗧𝗔𝗖𝗞 𝗙𝗜𝗡𝗜𝗦𝗛𝗘𝗗 💣\n"
